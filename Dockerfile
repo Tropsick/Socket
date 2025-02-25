@@ -1,14 +1,15 @@
-# Используем образ JDK 17 (или нужную версию)
 FROM openjdk:17
 
-# Устанавливаем рабочую директорию
 WORKDIR /app
 
-# Копируем все файлы проекта
-COPY . .
+# Копируем код Java в контейнер
+COPY app/src/main/java /app/src/main/java
+
+# Проверяем структуру файлов
+RUN ls -R /app/src/main/java
 
 # Компилируем сервер
-RUN javac WebSocketServerApp.java
+RUN javac /app/src/main/java/com/example/goodisnear/WebSocketServerApp.java
 
 # Запускаем сервер
-CMD ["java", "Socket"]
+CMD java -cp /app/src/main/java com.example.goodisnear.WebSocketServerApp
