@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Компилируем сервер
-RUN javac Socket.java
+RUN javac WebSocketServerApp.java
 
 # Запускаем сервер
 CMD ["java", "Socket"]
