@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="1000dp"
+    android:viewportWidth="400"
+    android:viewportHeight="600">
+
+    <path
+        android:fillColor="@color/scrollbackground"
+        android:pathData="M0,170
+                         Q30,190 60,170
+                         Q90,150 120,170
+                         Q150,180 180,170
+                         Q210,160 240,170
+                         Q270,190 300,170
+                         Q330,140 360,170
+                         Q380,185 400,170
+                         V600 H0 Z"/>
+</vector>

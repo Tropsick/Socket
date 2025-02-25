@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ScrollingActivityHelp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/background"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.GoodIsNear.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/background"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/background"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <!-- Фоновое изображение -->
+            <ImageView
+                android:id="@+id/heart_icon"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/heart_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:background="@drawable/circle_background"
+                    android:elevation="4dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/_23" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="60dp"
+                    android:gravity="bottom|center"
+                    android:text="ДОБРО РЯДОМ"
+                    android:textColor="@color/scrollbackground"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_nav_background"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="430dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <FrameLayout
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/circle_background"
+                android:elevation="4dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShop"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:onClick="OnClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/shop" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/circle_background"
+                android:elevation="4dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnMain"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:onClick="OnClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/_23" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/circle_background"
+                android:elevation="4dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnProf"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:onClick="OnClick"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/prof" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <include layout="@layout/content_scrollinghelp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

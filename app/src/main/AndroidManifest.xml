@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/_23"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GoodIsNear"
+        tools:targetApi="31">
+        <activity
+            android:name=".ScrollingActivityProfile"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling_profile"
+            android:theme="@style/Theme.GoodIsNear.NoActionBar" />
+        <activity
+            android:name=".ScrollingActivityHelp"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling_help"
+            android:theme="@style/Theme.GoodIsNear.NoActionBar" />
+        <activity
+            android:name=".ScrollingActivityShop"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling_shop"
+            android:theme="@style/Theme.GoodIsNear.NoActionBar" />
+        <activity
+            android:name=".ScrollingMainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GoodIsNear.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

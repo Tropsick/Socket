@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="redbtn">#D25759</color> <!-- Цвет кнопки отправки -->
+    <color name="backroundsort">#DCB05C</color> <!-- Цвет фона формы -->
+    <color name="primary">#FF6F61</color> <!-- Основной цвет заголовков и кнопок -->
+    <color name="background">#BDFFBB</color> <!-- Фон всего экрана -->
+    <color name="scrollbackground">#78AD76</color> <!-- Фон ScrollView -->
+    <color name="navBar">#FCC969</color> <!-- Цвет нижней навигации -->
+    <color name="light_green">#C5F6C5</color> <!-- Фон полей ввода и спиннера -->
+    <color name="dark_green">#4E8F4A</color> <!-- Граница полей ввода и спиннера -->
+    <color name="dark_text">#5A382D</color> <!-- Цвет текста заголовков -->
+</resources>
