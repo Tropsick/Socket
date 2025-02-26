@@ -31,7 +31,6 @@ public class ScrollingMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling_main);
-        Button sendButton = findViewById(R.id.buttonSend);
         // Делаем Status Bar прозрачным
         Window window = getWindow();
         window.getDecorView().setSystemUiVisibility(
